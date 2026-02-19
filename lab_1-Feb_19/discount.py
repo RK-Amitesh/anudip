@@ -4,9 +4,6 @@ cart_value = float(input("Enter cart value: "))
 membership = input("Enter membership (Silver/Gold/Platinum): ")
 festival = input("Is it festival season? (yes/no): ")
 
-membership = membership.lower()
-festival = festival.lower()
-
 discount = 0
 
 # Membership discount
@@ -34,4 +31,4 @@ discount_amount = (cart_value * discount) / 100
 final_amount = cart_value - discount_amount
 
 print("Highest Discount Applied:", discount, "%")
-print("Final Payable Amount: ₹", final_amount)
+print("Final Payable Amount: Rs", final_amount)
