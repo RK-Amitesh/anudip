@@ -1,47 +1,59 @@
-"""Description:
-    A simple calculator module that performs addition and subtraction of two numbers using reusable functions.
-
-    This script demonstrates:
-    - Function usage
-    - Input validation
-    - Clean and maintainable coding practices"""
-
-def add_numbers(num1: float, num2: float) -> float:
-    """Returns the sum of two numbers."""
-    return num1 + num2
+"""
+File: numeric_calculation.py
+Description:
+    Performs basic arithmetic operations:
+    Addition, Subtraction, Multiplication, and Division.
+"""
 
 
-def subtract_numbers(num1: float, num2: float) -> float:
-    """Returns the difference between two numbers."""
-    return num1 - num2
+# Function to return sum of two numbers
+def add(a: float, b: float) -> float:
+    return a + b
 
 
-def get_user_input() -> tuple:
-    """Takes numeric input from the user and validates it.
-        Returns-> tuple: Two float numbers entered by the user"""
-    try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        return num1, num2
-    except ValueError:
-        print("Invalid input! Please enter numeric values only.")
-        exit()
+# Function to return difference of two numbers
+def subtract(a: float, b: float) -> float:
+    return a - b
+
+
+# Function to return product of two numbers
+def multiply(a: float, b: float) -> float:
+    return a * b
+
+
+# Function to return division of two numbers
+def divide(a: float, b: float) -> float:
+    if b == 0:  # Prevent division by zero
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return a / b
 
 
 def main():
-    """Main function to execute calculator operations."""
-    print("\n===== Simple Calculator =====\n")
+    """Main function to execute program."""
 
-    num1, num2 = get_user_input()
+    try:
+        # Taking user input and converting to float
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
 
-    addition_result = add_numbers(num1, num2)
-    subtraction_result = subtract_numbers(num1, num2)
+        print("\n---- Results ----")
 
-    print("\n----- Results -----")
-    print(f"Addition: {num1} + {num2} = {addition_result}")
-    print(f"Subtraction: {num1} - {num2} = {subtraction_result}")
-    print("\n==============================\n")
+        # Calling arithmetic functions
+        print(f"Addition: {add(num1, num2)}")
+        print(f"Subtraction: {subtract(num1, num2)}")
+        print(f"Multiplication: {multiply(num1, num2)}")
+
+        # Handling division separately to catch zero division error
+        try:
+            print(f"Division: {divide(num1, num2)}")
+        except ZeroDivisionError as error:
+            print(f"Division Error: {error}")
+
+    except ValueError:
+        # Handles invalid numeric input
+        print("Invalid input! Please enter numeric values only.")
 
 
+# Ensures main() runs only when file is executed directly
 if __name__ == "__main__":
     main()
