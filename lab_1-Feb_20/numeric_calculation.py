@@ -1,3 +1,13 @@
+"""
+numeric_calculation.py
+
+This file is a reusable Python module that provides
+basic arithmetic operations such as addition,
+subtraction, multiplication, and division.
+
+It is designed to be imported into other Python programs.
+"""
+
 # Function to display sum of two numbers
 def displaysum(a, b):
     print("Sum of", a, "and", b, "is:", a + b)
