@@ -4,6 +4,7 @@ rows = 6   # Number of rows
 
 for i in range(1, rows + 1):
     
+    # Print spaces
     print("  "*(rows-i), end="")   # two spaces for proper alignment
     
     # Print stars
