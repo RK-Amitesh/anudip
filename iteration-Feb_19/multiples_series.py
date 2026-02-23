@@ -1,4 +1,4 @@
-# 5. Multiples of 5
+# Multiples of 5
 # Program to print multiples of 5 up to 100
 # Series: 5, 10, 15, 20, ...
 
