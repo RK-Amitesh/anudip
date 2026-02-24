@@ -1,4 +1,4 @@
-ECHO is on.# Problem 51
+# Problem 51
 # Find largest element in a list
 
 # Taking input from user
