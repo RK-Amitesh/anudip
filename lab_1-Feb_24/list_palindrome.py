@@ -1,4 +1,4 @@
-# Problem 66
+# Problem 65
 # Check if list is palindrome
 
 # Taking input from user
