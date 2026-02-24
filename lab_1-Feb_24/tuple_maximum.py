@@ -1,23 +1,21 @@
-# Problem 67
-# Flatten a nested list (one-level nesting)
+# Problem 66
+# Find maximum value in a tuple
 
-# Example nested list
-nested_list = [1, [2, 3], [4, 5], 6]
+# Taking input from user
+numbers = tuple(map(int, input("Enter tuple elements separated by space: ").split()))
 
-# Create empty list
-flat_list = []
+# Check if tuple is empty
+if len(numbers) == 0:
+    print("Tuple is empty.")
+else:
+    # Assume first element is maximum
+    maximum = numbers[0]
 
-# Loop through elements
-for item in nested_list:
+    # Loop through tuple elements
+    for num in numbers:
+        if num > maximum:
+            maximum = num
+            # Update maximum if larger value found
 
-    # If item is a list
-    if isinstance(item, list):
-        # Add each element inside nested list
-        for sub_item in item:
-            flat_list.append(sub_item)
-    else:
-        # If not list, add directly
-        flat_list.append(item)
-
-# Print result
-print("Flattened list:", flat_list)
+    # Print result
+    print("Maximum value:", maximum)
