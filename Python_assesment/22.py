@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # reading csv file
-data = pd.read_csv("sales.csv")
+data = pd.read_csv("sales_data.csv")
 
 print("Sales Data :\n")
 print(data)
