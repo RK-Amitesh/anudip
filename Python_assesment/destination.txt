@@ -1,0 +1,2 @@
+This file is created to store copied data.
+The content from source.txt will be copied here.
