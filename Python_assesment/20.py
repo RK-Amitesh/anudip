@@ -4,9 +4,7 @@
 
 try:
 
-    filename = input("Enter file name : ")
-
-    file = open(filename, "r")
+    file = open("sample.txt", "r")
 
     data = file.read()
 
@@ -21,7 +19,7 @@ try:
 
     lines = len(file.readlines())
 
-    print("\nTotal Lines =", lines)
+    print("Total Lines =", lines)
     print("Total Words =", words)
     print("Total Characters =", characters)
 
