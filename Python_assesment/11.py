@@ -11,19 +11,18 @@ total = 0
 
 for line in data:
 
-    temp = line.split()
+    parts = line.split()
 
-    name = temp[0]
-    marks = int(temp[1])
+    name = parts[0]
+    marks = int(parts[1])
 
     students.append((name, marks))
 
     total = total + marks
 
-# calculating average
 average = total / len(students)
 
-# finding topper
+# topper
 topper = students[0]
 
 for i in students:
@@ -36,7 +35,7 @@ print("Topper :", topper[0], "-", topper[1])
 
 print("Average Marks =", average)
 
-print("\nStudents Scoring Below Average :")
+print("\nStudents Below Average :")
 
 for i in students:
 
