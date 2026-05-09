@@ -1,0 +1,4 @@
+python is easy and python is powerful.
+python is widely used in data science.
+students learn python for projects and assignments.
+python programming is interesting and useful.
