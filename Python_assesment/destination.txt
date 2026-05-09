@@ -1,2 +1,4 @@
-This file is created to store copied data.
-The content from source.txt will be copied here.
+Python is a powerful programming language.
+It is easy to learn and widely used.
+Students use Python for projects and assignments.
+It is easy to lean.
