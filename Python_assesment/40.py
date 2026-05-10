@@ -5,7 +5,8 @@
 import pandas as pd
 import os
 
-filename = "students.csv"
+# fixed file path
+filename = r"C:\Users\AMITESH\OneDrive\Desktop\python\Python_assesment\students.csv"
 
 # checking if file exists
 if not os.path.exists(filename):
@@ -32,6 +33,7 @@ def add_student():
         marks = int(input("Enter marks : "))
         course = input("Enter course : ")
 
+        # append mode
         file = open(filename, "a")
 
         file.write(f"{name},{marks},{course}\n")
@@ -90,3 +92,4 @@ while True:
     else:
 
         print("Invalid Choice")
+        
